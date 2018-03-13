@@ -15,5 +15,7 @@ export class Cadastro{
    constructor(){
      this.jogo = new Jogo();
    }
-
+   salvar(jogoSalvar: Jogo) {
+       console.log(jogoSalvar);
+   }
 }

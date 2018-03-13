@@ -1,39 +1,44 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title>
-        Cadastro Game
-      </ion-title>
-    </ion-navbar>
+  <ion-navbar>
+    <ion-title>
+      Cadastro Game
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="salvar(jogo)">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
 </ion-header>
-  
-  <ion-content padding>
 
-    <ion-list>
+<ion-content padding>
 
-      <ion-item>
-          <ion-label floating>Código</ion-label>
-          <ion-input type="text" [(ngModel)]="jogo.codigo"></ion-input>
-      </ion-item>
+  <ion-list>
 
-      <ion-item>
-          <ion-label floating>Nome</ion-label>
-          <ion-input type="text" [(ngModel)]="jogo.nome"></ion-input>
-      </ion-item>
+    <ion-item>
+      <ion-label floating>Código</ion-label>
+      <ion-input type="text" [(ngModel)]="jogo.codigo"></ion-input>
+    </ion-item>
 
-      <ion-item> 
-           <ion-label floating>Categoria</ion-label>
-           <ion-input type="text" [(ngModel)]="jogo.categoria"></ion-input>  
-      </ion-item>
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="jogo.nome"></ion-input>
+    </ion-item>
 
-      <ion-item> 
-            <ion-label floating>Desenvolvedor</ion-label>
-            <ion-input type="text" [(ngModel)]="jogo.desenvolvedor"></ion-input>  
-       </ion-item>
+    <ion-item>
+      <ion-label floating>Categoria</ion-label>
+      <ion-input type="text" [(ngModel)]="jogo.categoria"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Desenvolvedor</ion-label>
+      <ion-input type="text" [(ngModel)]="jogo.desenvolvedor"></ion-input>
+    </ion-item>
 
 
-    </ion-list>
-    
-   <!-- <button ion-button color="danger">Salvar</button> -->
+  </ion-list>
 
-  </ion-content>
-  
+  <!-- <button ion-button color="danger">Salvar</button> -->
+
+</ion-content>
